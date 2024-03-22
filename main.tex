@@ -1,27 +1,63 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper, 14pt]{article}
 
 % PREAMPLE
 \usepackage[
-    inner=15mm,
-    outer=15mm,
+    inner=17mm,
+    outer=17mm,
     top=10mm,
-    bottom=20mm
+    bottom=10mm
 ]{geometry}
 \usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{hyperref}
 
 \newcommand{\myitem}{\item[\color{red}\#]}
+\newcommand{\highlight}[1]{\color{orange}#1\color{black}\vspace{.5pt}}
+\renewcommand{\familydefault}{\sfdefault}
 
 \title{\large PBL Competence Profile\\\small MSc Software Engineering / BSc Computer Engineering \\ Aalborg University}
 \author{Thomas Møller Jensen}
+\date{}
+\pagenumbering{gobble}
 
 \begin{document}
     %                                        Front section
+    \begin{minipage}{.65\textwidth}
     \maketitle
-    I've rapidly improved at project management and problem solving in conjunction with problem-based project work at Aalborg University
+    \end{minipage}
+    \begin{minipage}{.25\textwidth}
+        \hspace{.25\textwidth}
+        \begin{tikzpicture}
+            \clip (0,0) circle (1.5cm);
+            \node[anchor=center] at (0,0) {\includegraphics[width=.8\textwidth]{files/pfp.jpg}};
+        \end{tikzpicture}
+    \end{minipage}
+    \vspace{.5cm}
+
+    \noindent I have rapidly improved at project management and problem solving in conjunction with problem-based project work at Aalborg University
     %                                        Communication Skills
     \begin{itemize}
-        \myitem{} I've
+        \myitem{} I have practiced various methods to lead problem oriented discussion, I have experienced the importance of daily or weekly status meetings for the structure of the project work. For this type of project management I have had both the leading role in the discussion and not, both giving valuable insight in the project.
+        \myitem{} In my experience it is important to determine leadership in a project, and as such in multiple projects, roles of each member would be assigned to distribute responsibilities.
+        \myitem{} I have improved a lot at sharing of knowledge, it's tricky to formulate advanced knowledge to a project group efficiently. Learning how important reflection is for a person to learn themselves was important for me. I believe that confidence is key to effectively share knowledge.
+        \myitem{} My project work is often distributed between group members. I have experience using \highlight{git} and \highlight{Kanban boards} to manage the distribution of these tasks.
     \end{itemize}
     %                                        Project management tools
-    
+    \begin{itemize}
+        \myitem{} I have throughout every semester at Aalborg University practised \highlight{problem analysis} as the first step of any project. As i have studied multiple places, i have also experienced writing a more technical analysis, going into details about the systems relevant for the problem.
+        \myitem{} After a problem analysis I have experience writing a \highlight{Requirement analysis} and during my 7th semester project in conjunction with using the MoSCoW model.
+        \myitem{} As a student i would like to focus my efforts on problem solving, and with an extensive background and personal interest in software, i think the most important skill as a developer is to have good practises in solving the problem. For me those include:\\
+        -         Extensive testing knowledge, good documentation skills, and to keep code short and consise to improve readability and ease maintainability (i.e avoid new problems).
+        \myitem{} Despite how irrelevant the project contract felt on early semesters, I have experienced situations where it has been neccessary to make use of the agreement in the contract.
+    \end{itemize}
+    %                                        Verifying problems
+    \begin{itemize}
+        \myitem{} In my opinion, a very important aspect in solving problems at Aalborg University has been to \highlight{verify} the correctness of our solutions to a problem. I have gained knowledge on extensive testing methods, important analysis points of a solution how to discuss these results.
+                  I think this is important because you can't say the problem has been solved before you have been able to verify this, I learned the importance by doing the opposite on early semesters of my studies.
+    \end{itemize}
+    \begin{figure}[b]
+        \hspace{.9\textwidth}
+        \includegraphics[width=.10\textwidth]{files/aaulogo.png}
+        \tiny Written in \LaTeX, Source is available at: \href{https://github.com/Mast3rwaf1z/PBL-Competence-Profile}{https://github.com/Mast3rwaf1z/PBL-Competence-Profile}
+    \end{figure}
 \end{document}
